@@ -2,15 +2,23 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:lib": "pnpm -F unocss-components run build",
+    "build:play": "pnpm -F playground run build",
+    "dev:play": "pnpm -F playground run dev",
+    "f:lib": "pnpm -F unocss-components --",
+    "f:play": "pnpm -F playground --",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@f3ve/eslint-config": "^1.0.4",
+    "@types/node": "^20.8.2",
     "eslint": "^8.50.0",
     "typescript": "^5.2.2"
   }

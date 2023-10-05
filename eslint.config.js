@@ -1,11 +1,11 @@
 import f3veEslintConfig from '@f3ve/eslint-config';
 
 export default [
-  f3veEslintConfig({
+  ...f3veEslintConfig({
     typescript: true,
-    vue: true,
     browser: true,
-    unocss: true,
+    vue: true,
+    node: true,
     prettier: true,
   }),
 ];

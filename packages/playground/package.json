@@ -1,0 +1,32 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/tsconfig": "^0.4.0",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.4.11",
+    "vite-plugin-pages": "^0.31.0",
+    "vite-ssg": "^0.23.3",
+    "vite-ssg-sitemap": "^0.5.1"
+  },
+  "dependencies": {
+    "@unhead/vue": "^1.7.4",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "unocss-components": "workspace:*"
+  }
+}

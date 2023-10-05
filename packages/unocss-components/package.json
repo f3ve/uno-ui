@@ -1,12 +1,35 @@
 {
   "name": "unocss-components",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/unocss-components.js",
+  "types": "./dist/unocss-components.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/unocss-components.js",
+      "require": "./dist/unocss-components.umd.cjs"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/tsconfig": "^0.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vite-plugin-dts": "^3.6.0",
+    "vue": "^3.3.4"
+  }
 }
