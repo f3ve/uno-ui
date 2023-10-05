@@ -27,6 +27,6 @@
     "@unhead/vue": "^1.7.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
-    "unocss-components": "workspace:*"
+    "uno-ui": "workspace:*"
   }
 }

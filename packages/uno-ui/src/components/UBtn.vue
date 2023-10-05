@@ -1,7 +1,5 @@
-<script lang="ts" setup></script>
-
 <template>
-  <button>
+  <button class="text-red bg-black">
     <slot />
   </button>
 </template>

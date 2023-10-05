@@ -1,5 +1,5 @@
 {
-  "name": "unocss-components",
+  "name": "uno-ui",
   "version": "0.0.0",
   "description": "",
   "main": "./dist/unocss-components.js",
@@ -25,9 +25,12 @@
     "vue": "^3.2.0"
   },
   "devDependencies": {
+    "@unocss/core": "^0.56.5",
+    "@unocss/preset-uno": "^0.56.5",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/tsconfig": "^0.4.0",
     "typescript": "^5.2.2",
+    "unocss": "^0.56.5",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.0",
     "vue": "^3.3.4"
