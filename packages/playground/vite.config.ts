@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Pages from 'vite-plugin-pages';
+import UnoCSS from 'unocss/vite';
 
 import generateSitemap from 'vite-ssg-sitemap';
 
@@ -34,6 +35,10 @@ export default defineConfig({
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/],
+    }),
+
+    UnoCSS({
+      configFile: './uno.config.ts',
     }),
 
     AutoImport({

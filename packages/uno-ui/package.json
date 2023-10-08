@@ -2,13 +2,15 @@
   "name": "uno-ui",
   "version": "0.0.0",
   "description": "",
-  "main": "./dist/unocss-components.js",
-  "types": "./dist/unocss-components.d.ts",
+  "main": "./dist/uno-ui.js",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/unocss-components.js",
-      "require": "./dist/unocss-components.umd.cjs"
-    }
+      "import": "./dist/uno-ui.js",
+      "require": "./dist/uno-ui.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+    
   },
   "type": "module",
   "files": [
@@ -16,17 +18,19 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build": "vite build",
+    "build:watch": "vite build --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "peerDependencies": {
+    "unocss": "^0.56.5",
     "vue": "^3.2.0"
   },
   "devDependencies": {
     "@unocss/core": "^0.56.5",
-    "@unocss/preset-uno": "^0.56.5",
+    "@unocss/preset-mini": "^0.56.5",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/tsconfig": "^0.4.0",
     "typescript": "^5.2.2",

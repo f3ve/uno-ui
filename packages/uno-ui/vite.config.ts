@@ -19,8 +19,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'UnocssComponents',
-      fileName: 'unocss-components',
+      name: 'UnoUI',
+      fileName: 'uno-ui',
     },
     rollupOptions: {
       external: ['vue', 'unocss'],
@@ -33,9 +33,5 @@ export default defineConfig({
     },
   },
 
-  plugins: [
-    vue(),
-    dts({ rollupTypes: true }),
-    UnoCSS({ configFile: './uno.config.ts' }),
-  ],
+  plugins: [vue(), dts(), UnoCSS({ configFile: './uno.config.ts' })],
 });

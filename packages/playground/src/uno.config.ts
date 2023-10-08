@@ -1,5 +1,5 @@
 import { defineConfig } from 'unocss';
-import { presetUnoUI } from './src/uno-ui-presets';
+import { presetUnoUI } from 'uno-ui';
 
 export default defineConfig({
   presets: [presetUnoUI()],

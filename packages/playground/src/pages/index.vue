@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { UBtn } from 'unocss-components';
+import { UBtn } from 'uno-ui';
 </script>
 
 <template>

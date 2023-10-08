@@ -1,3 +1,7 @@
+import '@unocss/reset/tailwind.css';
+import 'uno.css';
+import 'uno-ui/dist/style.css';
+
 import App from './App.vue';
 import { ViteSSG } from 'vite-ssg';
 import routes from '~pages';

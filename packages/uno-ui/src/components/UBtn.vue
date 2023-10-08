@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+import 'virtual:uno.css';
+</script>
+
 <template>
-  <button class="text-red bg-black">
+  <button>
     <slot />
   </button>
 </template>
