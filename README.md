@@ -4,8 +4,6 @@ A Vue component library built with [UnoCSS](https://github.com/unocss/unocss).
 
 ## Installation
 
-> Notes: requires eslint
-
 Coming soon. This project is still in development and is not ready for public use.
 
 ## Usage
