@@ -11,5 +11,10 @@
     "moduleResolution": "Node",
     "module": "ESNext",
     "target": "ESNext"
-  }
+  },
+  "exclude": [
+    "**/node_modules/**",
+    "**/example/**",
+    "**/packages/components/**"
+  ]
 }

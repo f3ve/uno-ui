@@ -73,14 +73,23 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
 
+  packages/preset:
+    devDependencies:
+      unocss:
+        specifier: ^0.56.5
+        version: 0.56.5(postcss@8.4.31)(vite@4.4.11)
+      vite:
+        specifier: ^4.4.11
+        version: 4.4.11(@types/node@20.8.2)
+      vite-plugin-dts:
+        specifier: ^3.6.0
+        version: 3.6.0(@types/node@20.8.2)(typescript@5.2.2)(vite@4.4.11)
+
   packages/uno-ui:
     devDependencies:
-      '@unocss/core':
-        specifier: ^0.56.5
-        version: 0.56.5
-      '@unocss/preset-mini':
-        specifier: ^0.56.5
-        version: 0.56.5
+      '@uno-ui/preset':
+        specifier: workspace:*
+        version: link:../preset
       '@vitejs/plugin-vue':
         specifier: ^4.4.0
         version: 4.4.0(vite@4.4.11)(vue@3.3.4)

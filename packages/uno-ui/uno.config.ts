@@ -1,6 +1,6 @@
-import { defineConfig } from 'unocss';
-import { presetUnoUI } from './src/uno-ui-presets';
+import { defineConfig, presetUno } from 'unocss';
+import { presetUnoUI } from '@uno-ui/preset';
 
 export default defineConfig({
-  presets: [presetUnoUI()],
+  presets: [presetUno(), presetUnoUI()],
 });

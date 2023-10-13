@@ -10,7 +10,6 @@
       "require": "./dist/uno-ui.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
-    
   },
   "type": "module",
   "files": [
@@ -23,20 +22,19 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "unocss": "^0.56.5",
     "vue": "^3.2.0"
   },
   "devDependencies": {
-    "@unocss/core": "^0.56.5",
-    "@unocss/preset-mini": "^0.56.5",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/tsconfig": "^0.4.0",
     "typescript": "^5.2.2",
     "unocss": "^0.56.5",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "@uno-ui/preset": "workspace:*"
   }
 }

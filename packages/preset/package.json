@@ -1,0 +1,34 @@
+{
+  "name": "@uno-ui/preset",
+  "version": "1.0.0",
+  "description": "Standalone UnoCSS preset for the @f3ve/uno-ui component library.",
+  "main": "./dist/uno-ui-preset.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/uno-ui-preset.mjs",
+      "require": "./dist/uno-ui-preset.umd.js"
+    }
+  },
+  "type:": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "@f3ve/uno-ui",
+    "uno-ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "unocss": "^0.56.5",
+    "vite": "^4.4.11",
+    "vite-plugin-dts": "^3.6.0"
+  }
+}

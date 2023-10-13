@@ -1,6 +1,6 @@
 import '@unocss/reset/tailwind.css';
-import 'uno.css';
 import 'uno-ui/dist/style.css';
+import 'uno.css';
 
 import App from './App.vue';
 import { ViteSSG } from 'vite-ssg';
