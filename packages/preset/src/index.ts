@@ -1,36 +1,19 @@
 import { type Preset } from 'unocss';
 import { colors } from 'unocss/preset-mini';
+import { levels, types } from './utils';
 
-const types = [
-  'primary',
-  'secondary',
-  'accent',
-  'error',
-  'success',
-  'warning',
-  'info',
-];
-
-const levels = [
-  '50',
-  '100',
-  '200',
-  '300',
-  '400',
-  '500',
-  '600',
-  '700',
-  '800',
-  '900',
-  '950',
-];
+export { generateVariants } from './utils';
 
 export function presetUnoUI(): Preset {
   return {
     name: '@f3ve/uno-ui-preset',
     safelist: [
       // Create background classes
-      ...types.map((t) => levels.map((l) => `bg-${t}-${l}`)).flat(),
+      ...types
+        .map((t) =>
+          levels.map((l) => [`bg-${t}-${l}`, `hover:bg-${t}-${l}`]).flat(),
+        )
+        .flat(),
     ],
     theme: {
       colors: {

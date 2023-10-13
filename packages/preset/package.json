@@ -27,6 +27,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/color": "^3.0.4",
+    "color": "^4.2.3",
     "unocss": "^0.56.5",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.0"

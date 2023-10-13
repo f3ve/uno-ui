@@ -19,12 +19,17 @@ const props = withDefaults(
 );
 
 const className = computed(() =>
-  props.type === 'default' ? `bg-gray` : `bg-${props.type}-600`,
+  props.type === 'default'
+    ? `bg-gray-500 hover:bg-gray-400`
+    : `bg-${props.type}-500 hover:bg-${props.type}-400 `,
 );
 </script>
 
 <template>
-  <button class="rounded px-4 py-2" :class="className">
+  <button
+    class="text-white rounded px-4 py-2 transition-colors"
+    :class="className"
+  >
     <slot />
   </button>
 </template>
