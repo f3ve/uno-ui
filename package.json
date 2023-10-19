@@ -19,8 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "@f3ve/eslint-config": "^1.0.4",
-    "@types/node": "^20.8.2",
-    "eslint": "^8.50.0",
+    "@types/node": "^20.8.7",
+    "eslint": "^8.51.0",
     "typescript": "^5.2.2"
   }
 }
