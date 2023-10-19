@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "pnpm -F uno-ui run build",
     "build:preset": "pnpm -F preset run build",
+    "build:ui": "pnpm run build:preset && pnpm -F uno-ui run build",
     "build:play": "pnpm -F playground run build",
     "dev:play": "pnpm -F playground run dev",
     "f:ui": "pnpm -F uno-ui --",
